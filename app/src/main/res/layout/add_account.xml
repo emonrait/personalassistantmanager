@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/add_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/design_default_color_background"
+        android:text="Add New Account"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_act"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/colorAccent"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            android:hint="Account Name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/cornerd_button"
+            android:text="Cancel"
+            android:textSize="14dp"
+            android:layout_margin="4dp"
+            android:id="@+id/btn_cancel"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/cornerd_button"
+            android:text="SAVE"
+            android:textSize="14dp"
+            android:id="@+id/btn_save"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
